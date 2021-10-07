@@ -36,6 +36,7 @@ class ComposerStaticInitfd84330128b64f9d7bf9d6f9cc52315e
             'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
+            'Program\\' => 8,
             'PhpParser\\' => 10,
         ),
         'L' => 
@@ -59,10 +60,6 @@ class ComposerStaticInitfd84330128b64f9d7bf9d6f9cc52315e
         array (
             'Config\\' => 7,
             'CodeIgniter\\' => 12,
-        ),
-        'A' => 
-        array (
-            'App\\' => 4,
         ),
     );
 
@@ -97,6 +94,10 @@ class ComposerStaticInitfd84330128b64f9d7bf9d6f9cc52315e
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
         ),
+        'Program\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -129,10 +130,6 @@ class ComposerStaticInitfd84330128b64f9d7bf9d6f9cc52315e
         array (
             0 => __DIR__ . '/..' . '/codeigniter4/framework/system',
         ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
-        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -146,6 +143,7 @@ class ComposerStaticInitfd84330128b64f9d7bf9d6f9cc52315e
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
