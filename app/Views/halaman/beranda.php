@@ -10,7 +10,7 @@
             <div class="card-body">
                 Halo ini beranda<br/>
                 Email yang diisikan : <?=$email?> <br/>
-                Password : <?=$sandi?>
+                Password : <?=$sandi?> 
             </div>
         </div>
     </div>

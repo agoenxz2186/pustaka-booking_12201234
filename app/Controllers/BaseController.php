@@ -2,11 +2,15 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\Config\Services as ConfigServices;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\CLIRequest;
 use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\Session\Session;
+use CodeIgniter\Validation\Validation;
+use Config\Services; 
 use Psr\Log\LoggerInterface;
 
 /**
@@ -36,17 +40,23 @@ class BaseController extends Controller
      * @var array
      */
     protected $helpers = [];
-
+   
+    /**
+     * 
+     * @var Session
+     */
+    protected $session;
+    
     /**
      * Constructor.
      */
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
         // Do Not Edit This Line
-        parent::initController($request, $response, $logger);
-
+        parent::initController($request, $response, $logger); 
         // Preload any models, libraries, etc, here.
 
-        // E.g.: $this->session = \Config\Services::session();
+        $this->session = \Config\Services::session();
+ 
     }
 }

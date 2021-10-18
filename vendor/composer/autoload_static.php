@@ -36,7 +36,6 @@ class ComposerStaticInitfd84330128b64f9d7bf9d6f9cc52315e
             'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
-            'Program\\' => 8,
             'PhpParser\\' => 10,
         ),
         'L' => 
@@ -60,6 +59,10 @@ class ComposerStaticInitfd84330128b64f9d7bf9d6f9cc52315e
         array (
             'Config\\' => 7,
             'CodeIgniter\\' => 12,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -94,10 +97,6 @@ class ComposerStaticInitfd84330128b64f9d7bf9d6f9cc52315e
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
         ),
-        'Program\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
-        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -129,6 +128,10 @@ class ComposerStaticInitfd84330128b64f9d7bf9d6f9cc52315e
         'CodeIgniter\\' => 
         array (
             0 => __DIR__ . '/..' . '/codeigniter4/framework/system',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
