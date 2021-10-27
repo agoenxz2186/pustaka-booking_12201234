@@ -1,8 +1,11 @@
 <?=$this->extend('dasar_tampilan');?>
 <?=$this->section('isiweb')?>
 <?php
-    
+
+use Config\Services;
+$vd = $vd ?? Services::validation();
 ?>
+
 <form method="POST" action="<?=base_url('/login')?>">
    <div class="container col-md-3">
        <div class="card mt-5">
@@ -24,10 +27,12 @@
                             type="text" name="email" />
                     <label for="txtEmail" >Email</label>
 
-                <?php  if($vd?->getError('email')){ ?>
+                <?php  
+
+                if($vd->getError('email')){ ?>
                     <div class="alert alert-danger">
                     <?php
-                        echo $vd?->getError('email');
+                        echo $vd->getError('email');
                     ?>
                     </div>
                 <?php } ?>
@@ -40,7 +45,8 @@
                             type="password" name="sandi" />
                     <label for='txtPass'>Kata Sandi</label>   
 
-                <?php if($vd?->getError('sandi')){ ?>    
+                <?php  
+                if($vd->getError('sandi')){ ?>    
                     <div class="alert alert-danger">
                     <?php
                         echo $vd?->getError('sandi');
